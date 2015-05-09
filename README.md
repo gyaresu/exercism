@@ -1,4 +1,4 @@
-## Exercism 
+## Exercism
 
 My solutions for code problems from http://exercism.io
 
