@@ -1,6 +1,6 @@
-var compute = require('./hamming');
+var compute = require('./hamming').compute;
 
-describe('Hamming:', function () {
+describe('Hamming', function () {
 
   it('no difference between identical strands', function () {
     expect(compute('A', 'A')).toEqual(0);

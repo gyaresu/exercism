@@ -1,4 +1,6 @@
-module.exports = function(first, second) {
+var Hamming = {};
+
+Hamming.compute = function(first, second) {
     var f = first.split(''),
         s = second.split(''),
         count = 0;
@@ -14,3 +16,5 @@ module.exports = function(first, second) {
 
     return count;
 };
+
+module.exports = Hamming;
