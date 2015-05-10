@@ -6,7 +6,7 @@ Bob.prototype.hey = function(input) {
         return 'Whoa, chill out!';
     } else if (/\?$/.test(input)) {
         return 'Sure.';
-    } else if (!input) {
+    } else if (!input.trim()) {
         return 'Fine. Be that way!';
     } else {
         return 'Whatever.';
