@@ -8,7 +8,7 @@ var Anagram = function(word) {
 
 Anagram.prototype.matches = function(arr){
     if (typeof(arr) === 'string')
-        arr = Array.prototype.slice.call(process.argv);
+        arr = Array.prototype.slice.call(arguments);
 
     var testWord = this.word;
     var sorted = this.word.toLowerCase().split('').sort().join('');
