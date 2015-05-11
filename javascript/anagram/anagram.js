@@ -1,15 +1,17 @@
+var exportNewAnagram = function(word) {
+    return new Anagram(word);
+};
+
 var Anagram = function(word) {
     this.word = word;
 };
 
 Anagram.prototype.matches = function(arr){
-    var word = this.word.split().sort().join('');
-
-    // re-read the problem. you need to return possible anagrams
+    var sorted = this.word.toLowerCase().split('').sort().join('');
 
     return arr.filter(function(each) {
-        return each.split().sort().join('') === word;
+        return each.toLowerCase().split('').sort().join('') === sorted;
     });
 };
 
-module.exports = Anagram;
+module.exports = exportNewAnagram;
